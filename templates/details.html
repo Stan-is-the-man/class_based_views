@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    
 </head>
 <body>
 <h1> Details page </h1>
@@ -13,12 +14,8 @@
 
 <a href="{% url 'update' object.pk %}">
     <h1>
-
         {{ object.first_name }} {{ object.last_name }} is {{ object.seniority_level }}
-
     </h1>
-
-
 </a>
 
 
