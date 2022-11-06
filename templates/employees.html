@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    {% for employee in employees %}
+        <li>
+            <a href="{% url 'details' employee.pk %}">
+                <h1>
+                    {{ employee.full_name }}
+                </h1>
+            </a>
+        </li>
+
+    {% endfor %}
+</ul>
+
+</body>
+</html>
